@@ -15,6 +15,12 @@ Route::get('think', function () {
 
 Route::get('hello/:name', 'index/hello');
 
+Route::group(['namespace'=>'admin','prefix'=>'admin'],function () {
+
+    Route::get('/','admin/index');
+});
+
+
 return [
 
 ];
