@@ -7,7 +7,9 @@ class Index {
         return view('index');
     }
 
-    
+    public function member(){
+        echo '11';
+    }
 }
 
 ?>
