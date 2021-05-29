@@ -54,7 +54,7 @@ return [
     // +----------------------------------------------------------------------
 
     // 默认模块名
-    'default_module'         => 'index',
+    'default_module'         => 'admin',
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
@@ -142,5 +142,11 @@ return [
     'show_error_msg'         => false,
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
+
+    // 'domain_bind' => [
+    //     'admin'        =>  'admin',  //  blog子域名绑定到blog应用
+    //     'admin.tp5.com' =>  'admin',  //  完整域名绑定
+    //     '*'           =>  'admin', // 二级泛域名绑定到home应用
+    // ],
 
 ];

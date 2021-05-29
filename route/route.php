@@ -9,18 +9,10 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-Route::get('think', function () {
-    return 'hello,ThinkPHP5!';
-});
-
-Route::get('hello/:name', 'index/hello');
-
-Route::group(['namespace'=>'admin','prefix'=>'admin'],function () {
-
-    Route::get('/','admin/index');
-});
 
 
-return [
+Route::domain('admin',function(){
+    Route::get('/','Index/index');
 
-];
+    Route::get('/member','Index/member');
+})->prefix('admin/');
